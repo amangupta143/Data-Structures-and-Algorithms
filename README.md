@@ -9,77 +9,116 @@
 <!-- Banner image -->
 ![Data Structures and Algorithms](https://github.com/amangupta143/Data-Structures-and-Algorithms/assets/109453339/05553745-da21-4e5e-b86d-b31a77bcfdba)
 
-Welcome to the **C++ Data Structures and Algorithms** repository! This repository contains various C++ programs related to data structures and algorithms. Whether you're a beginner or an experienced programmer, you'll find valuable resources here to enhance your understanding of fundamental concepts. 🚀
+Welcome to the **C++ Data Structures and Algorithms** repository! This comprehensive collection showcases various implementations of data structures and algorithms in C++. Whether you're preparing for coding interviews, learning computer science fundamentals, or seeking to strengthen your programming skills, this repository serves as a valuable resource. 🚀
 
-<!-- Table of Contents -->
-## Table of Contents
+## 📚 Table of Contents
 
-- Introduction
-- Getting Started
-- Chapters
-- Prerequisites
-- Compilation and Execution
-- Contributing
-- License
+- [Introduction](#-introduction)
+- [Repository Structure](#-repository-structure)
+- [Getting Started](#-getting-started)
+- [LeetCode Solutions](#-leetcode-solutions)
+- [Prerequisites](#-prerequisites)
+- [Compilation Guide](#-compilation-guide)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-## Introduction
+## 🎯 Introduction
 
-In this repository, you'll find implementations of common data structures (such as arrays, linked lists, trees, graphs, etc.) and algorithms (sorting, searching, dynamic programming, etc.). Each chapter/topic has its own directory, making it easy to navigate and explore.
+This repository contains carefully crafted implementations of fundamental data structures and algorithms, accompanied by detailed explanations and problem-solving approaches. Each implementation is designed to be both educational and practical, helping you build a strong foundation in computer science concepts.
 
-## Getting Started
+## 📂 Repository Structure
 
-To get started with this repository, follow these steps:
+```
+Data-Structures-and-Algorithms/
+├── Leetcode-Solutions/
+│   └── Question-Name/        # Example: 0001-two-sum
+│       ├── README.md         # Problem description and approach
+│       └── question-name.cpp # Solution implementation
+├── LICENSE
+└── README.md
+```
 
-1. Clone the repository to your local machine:
+Each LeetCode solution includes:
+- Detailed problem description
+- Time and space complexity analysis
+- Solution approach explanation
+- Fully commented C++ implementation
+
+## 🚀 Getting Started
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/amangupra143/Data-Structures-and-Algorithms.git
-2. Navigate to the relevant chapter/topic directory:
+   git clone https://github.com/amangupta143/Data-Structures-and-Algorithms.git
+   ```
+
+2. Navigate to any solution directory:
    ```bash
-   cd Chapters/Chapter01
-3. Compile the C++ program:
+   cd Leetcode-Solutions/Question-Name
+   ```
+
+3. Read the problem's README.md to understand the approach
+
+4. Compile and run the solution:
    ```bash
-   g++ -o program_name program_name.cpp
-4. Run the compiled program:
-   ```bash
-   ./program_name
+   g++ -std=c++17 -o solution question-name.cpp
+   ./solution
+   ```
 
+## 💡 LeetCode Solutions
 
-## Chapters
+Each solution in the repository follows a consistent structure to help you understand the problem-solving process:
 
-Explore the different chapters in this repository:
+- Problem statement and constraints
+- Multiple approaches (when applicable)
+- Time and space complexity analysis
+- Edge cases and test scenarios
+- Detailed code comments explaining the implementation
 
-- Chapter01: Introduction to arrays
-- Chapter02: Linked lists
-- Chapter03: Stacks and queues
-- ...
+## 🛠 Prerequisites
 
-Feel free to contribute by adding new chapters or improving existing code!
+- C++ compiler supporting C++17 or later
+- Basic understanding of data structures and algorithms
+- Git for version control
+- CMake (optional, for building complex examples)
 
-## Prerequisites
+## 📝 Compilation Guide
 
-Before running the programs, ensure you have the following installed:
+For most solutions, a simple compilation command will suffice:
 
-- C++ compiler (e.g., g++)
-- Any additional libraries or tools specific to certain algorithms (mentioned in respective chapters)
+```bash
+g++ -std=c++17 -Wall -Wextra -o solution question-name.cpp
+```
 
-## Compilation and Execution
+For debugging, you can use:
+```bash
+g++ -std=c++17 -g -Wall -Wextra -o solution question-name.cpp
+```
 
-Compile the C++ programs using the provided instructions in each chapter. Execute the compiled binaries to see the results.
+## 🤝 Contributing
 
-## Contributing
+Contributions are highly encouraged! Here's how you can contribute:
 
-Contributions are welcome! If you find a bug, want to add a new algorithm, or improve existing code, feel free to submit a pull request.
+1. Fork the repository
+2. Create a new branch for your feature: `git checkout -b feature-name`
+3. Implement your changes
+4. Add meaningful commit messages
+5. Push to your branch: `git push origin feature-name`
+6. Open a Pull Request
 
-## License
+Please ensure your code follows these guidelines:
+- Clear and consistent formatting
+- Comprehensive comments
+- Problem approach explanation in README.md
+- Test cases included
 
-This project is licensed under the <a href="LICENCE">MIT License</a>. See the LICENSE file for details.
+## 📄 License
 
+This project is licensed under the [MIT License](LICENSE). Feel free to use the code for learning purposes and share it with others.
 
-<!-- Animated Line: -->
-
+<!-- Animated Line -->
 <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
-Happy coding! 🚀
+Happy Coding! 🚀
 
 <!-- Footer Links -->
 [![Portfolio](https://img.shields.io/badge/-Portfolio-red?style=flat&logo=appveyor&logoColor=white)](https://github.com/amangupta143)
