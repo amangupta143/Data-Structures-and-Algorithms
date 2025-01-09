@@ -13,14 +13,14 @@ Welcome to the **C++ Data Structures and Algorithms** repository! This comprehen
 
 ## 📚 Table of Contents
 
-- [Introduction](#introduction)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-- [LeetCode Solutions](#leetcode-solutions)
-- [Prerequisites](#prerequisites)
-- [Compilation Guide](#compilation-guide)
-- [Contributing](#contributing)
-- [License](#license)
+- [Introduction](#-introduction)
+- [Repository Structure](#-repository-structure)
+- [Getting Started](#-getting-started)
+- [LeetCode Solutions](#-leetcode-solutions)
+- [Prerequisites](#-prerequisites)
+- [Compilation Guide](#-compilation-guide)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## 🎯 Introduction
 
