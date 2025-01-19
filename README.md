@@ -5,6 +5,8 @@
 ![GitHub License](https://img.shields.io/github/license/amangupta143/Data-Structures-and-Algorithms?style=flat&labelColor=524C42&color=524C42)
 ![GitHub Repo stars](https://img.shields.io/github/stars/amangupta143/Data-Structures-and-Algorithms?style=flat&labelColor=E2DFD0&color=E2DFD0)
 ![GitHub last commit](https://img.shields.io/github/last-commit/amangupta143/Data-Structures-and-Algorithms?labelColor=F97300&color=F97300)
+![Lines of code](https://tokei.rs/b1/github/amangupta143/Data-Structures-and-Algorithms?category=code&labelColor=F97300&color=7D53DE)
+![Number of files](https://tokei.rs/b1/github/amangupta143/Data-Structures-and-Algorithms?category=files&labelColor=F97300&color=60993E)
 
 <!-- Banner image -->
 ![Data Structures and Algorithms](https://github.com/amangupta143/Data-Structures-and-Algorithms/assets/109453339/05553745-da21-4e5e-b86d-b31a77bcfdba)
