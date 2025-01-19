@@ -17,6 +17,7 @@ Welcome to the **C++ Data Structures and Algorithms** repository! This comprehen
 - [Repository Structure](#-repository-structure)
 - [Getting Started](#-getting-started)
 - [LeetCode Solutions](#-leetcode-solutions)
+- [GeeksForGeeks Solutions](#-geeksforgeeks-solutions)
 - [Prerequisites](#-prerequisites)
 - [Compilation Guide](#-compilation-guide)
 - [Contributing](#-contributing)
@@ -30,6 +31,10 @@ This repository contains carefully crafted implementations of fundamental data s
 
 ```
 Data-Structures-and-Algorithms/
+├── GeeksForGeeks-Solutions/
+│   └── Question-Name/        # Example: Move All Zeroes to End
+│       ├── README.md         # Problem description and approach
+│       └── question-name.cpp # Solution implementation
 ├── Leetcode-Solutions/
 │   └── Question-Name/        # Example: 0001-two-sum
 │       ├── README.md         # Problem description and approach
@@ -38,7 +43,7 @@ Data-Structures-and-Algorithms/
 └── README.md
 ```
 
-Each LeetCode solution includes:
+Each solution includes:
 - Detailed problem description
 - Time and space complexity analysis
 - Solution approach explanation
@@ -54,6 +59,8 @@ Each LeetCode solution includes:
 2. Navigate to any solution directory:
    ```bash
    cd Leetcode-Solutions/Question-Name
+   # or
+   cd GeeksForGeeks-Solutions/Question-Name
    ```
 
 3. Read the problem's README.md to understand the approach
@@ -66,13 +73,23 @@ Each LeetCode solution includes:
 
 ## 💡 LeetCode Solutions
 
-Each solution in the repository follows a consistent structure to help you understand the problem-solving process:
+Each LeetCode solution in the repository follows a consistent structure to help you understand the problem-solving process:
 
 - Problem statement and constraints
 - Multiple approaches (when applicable)
 - Time and space complexity analysis
 - Edge cases and test scenarios
 - Detailed code comments explaining the implementation
+
+## 🎓 GeeksForGeeks Solutions
+
+The GeeksForGeeks solutions section contains implementations of various problems from GeeksForGeeks, featuring:
+
+- Step-by-step problem explanations
+- Multiple solution approaches where applicable
+- Optimized implementations with detailed comments
+- Time and space complexity analysis
+- Test cases and edge case handling
 
 ## 🛠 Prerequisites
 
