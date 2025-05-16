@@ -11,25 +11,25 @@
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        ListNode* mergedListHead = new ListNode(-1);
-        ListNode* mergedListTail = mergedListHead;
+        ListNode* mergedList = new ListNode(-1);
+        ListNode* tail = mergedList;
 
-        while(list1 != NULL && list2 != NULL) {
-            if(list1->val < list2->val) {
-                int value = 1;
-                mergedListTail->next = new ListNode(list1->val);
-                mergedListTail = mergedListTail->next;
+        while(list1 != nullptr && list2 != nullptr) {
+            if(list1->val <= list2->val) {
+                tail->next = new ListNode(list1->val, nullptr);
+                tail = tail->next;
                 list1 = list1->next;
-            } else {
-                mergedListTail->next = new ListNode(list2->val);
-                mergedListTail = mergedListTail->next;
+            }
+            else {
+                tail->next = new ListNode(list2->val, nullptr);
+                tail = tail->next;
                 list2 = list2->next;
             }
         }
 
-        if(list1 == NULL) mergedListTail->next = list2;
-        else if (list2 == NULL) mergedListTail->next = list1;
+        if(list1 == NULL) tail->next = list2;
+        else if (list2 == NULL) tail->next = list1;
 
-        return mergedListHead->next;
+        return mergedList->next;
     }
 };
