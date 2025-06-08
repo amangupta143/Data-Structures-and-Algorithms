@@ -12,24 +12,22 @@ class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         int size = lists.size();
-        ListNode* ans = new ListNode(-1, nullptr);
-        ListNode* currPtr = ans;
-
+        ListNode* mergedList = new ListNode(-1);
+        ListNode* head = mergedList;
         while(true) {
-            int lowVal = INT_MAX;
-            int lowIdx = -1;
+            int smallIdx = -1;
+            int smallVal = INT_MAX;
             for(int i=0; i<size; i++) {
-                if(lists[i] == nullptr) continue;
-                else if(lists[i]->val < lowVal) {
-                    lowVal = lists[i]->val;
-                    lowIdx = i;
+                if(lists[i] != nullptr && lists[i]->val < smallVal) {
+                    smallVal = lists[i]->val;
+                    smallIdx = i;
                 }
             }
-            if(lowIdx == -1) break;
-            currPtr->next = new ListNode(lowVal);
-            currPtr = currPtr->next;
-            lists[lowIdx] = lists[lowIdx]->next;
+            if(smallIdx == -1) break;
+            mergedList->next = new ListNode(smallVal);
+            mergedList = mergedList->next;
+            lists[smallIdx] = lists[smallIdx]->next;
         }
-        return ans->next;
+        return head->next;
     }
 };
