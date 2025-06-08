@@ -1,21 +1,30 @@
 class Solution {
 public:
-    bool pal(string subStr) {
-        int s=0, e = subStr.size()-1;
-        while(s<e) {
-            if(subStr[s++] != subStr[e--]) return false;
+    bool isPalindrome(string substr) {
+        int l = 0, h = substr.size()-1;
+        while(l < h) {
+            if(substr[l++] != substr[h--]) {
+                return false;
+            }
         }
         return true;
+    }
+
+    void palindromeCount(string s, string subStr, int leftIdx, int rightIdx, int& count) {
+        if(isPalindrome(subStr)) count++;
+        else return;
+
+        if(leftIdx != 0 && rightIdx != s.size()-1) 
+        palindromeCount(s, s.substr(leftIdx-1, rightIdx-leftIdx+3), leftIdx-1, rightIdx+1, count);
+
+        return;
     }
 
     int countSubstrings(string s) {
         int count = 0, size = s.size();
         for(int i=0; i<size; i++) {
-            string subStr = "";
-            for(int j=i; j<size; j++) {
-                subStr.push_back(s[j]);
-                if(pal(subStr)) count++;
-            }
+            palindromeCount(s, s.substr(i, 1), i, i, count);
+            if(i != size-1) palindromeCount(s, s.substr(i, 2), i, i+1, count);
         }
         return count;
     }
