@@ -2,8 +2,6 @@ class Solution {
 public:
     int orangesRotting(vector<vector<int>>& grid) {
         int ROWS = grid.size(), COLS = grid[0].size();
-        if(ROWS == 1 && COLS == 1 && grid[0][0] == 1) return -1;
-        
         queue<pair<int, int>> q;
         vector<pair<int, int>> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
@@ -20,6 +18,7 @@ public:
             }
         }
 
+        // if all cells are empty
         if(ROWS*COLS == emptyCells) return 0;
 
         int minutes = -1;
