@@ -6,13 +6,17 @@ public:
         if(size == 2) return max(nums[0], nums[1]);
         if(size == 3) return max(nums[1], nums[0] + nums[2]);
 
-        vector<int> maxMoney;
-        maxMoney.push_back(nums[0]);
-        maxMoney.push_back(nums[1]);
-        maxMoney.push_back(max(nums[1], nums[0] + nums[2]));
-        for(int i = 3; i<size; i++) {
-            maxMoney.push_back(max(maxMoney[i-3]+nums[i], maxMoney[i-2]+nums[i]));
+        int last = max(nums[1], nums[0] + nums[2]), 
+            secLast = max(nums[0], nums[1]), 
+            thirdLast = nums[0];
+
+        for(int i=3; i<size; i++) {
+            int temp = last;
+            last = max(secLast, thirdLast) + nums[i];
+            thirdLast = secLast;
+            secLast = temp;
         }
-        return max(maxMoney[size-1], maxMoney[size-2]);
+
+        return max(last, secLast);
     }
 };
