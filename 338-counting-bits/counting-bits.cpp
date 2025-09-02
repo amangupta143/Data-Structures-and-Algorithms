@@ -1,14 +1,9 @@
 class Solution {
 public:
     vector<int> countBits(int n) {
-        vector<int> bits;
-        for(int i=0; i<=n; i++) {
-            int currOnesCount = 0, tempIdx = i;
-            while(tempIdx) {
-                if(tempIdx & 1 == 1) currOnesCount++;
-                tempIdx = tempIdx >> 1;
-            }
-            bits.push_back(currOnesCount);
+        vector<int> bits(n+1,0);
+        for(int i=1;i<=n;i++){
+            bits[i]=bits[i>>1]+(i&1);
         }
         return bits;
     }
